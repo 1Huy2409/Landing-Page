@@ -2,3 +2,140 @@ body
 {
     font-family: "Nunito", sans-serif;
 }
+a {
+    text-decoration: none;
+    color: black;
+}
+header
+{
+    padding: 20px 200px;
+    background-color: greenyellow;
+    position: sticky;
+    top: 0;
+}
+header .navbar 
+{
+    background-color: greenyellow;
+}
+header .container
+{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .navbar-page-name
+{
+    color: #E52F37;
+    font-size: 28px;
+    font-weight: 700;
+}
+.navbar-item a{
+    display: inline-block;
+    color: rgb(7, 30, 85);
+    font-weight: 600;
+    font-size: 17px;
+}
+.navbar-item a:hover{
+    color:#E52F37;
+}
+.navbar-list-items
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+.navbar-list-items .begin-button
+{
+    padding: 16px 18px;
+    background-color: #E52F37;
+    border: 1px solid #E52F37;
+    border-radius: 28px;
+    transition: all ease .5s;
+}
+.navbar-list-items .begin-button a
+{
+    color: #fff;
+}
+.navbar-list-items .begin-button:hover
+{
+    background-color: #fff;
+    cursor: pointer;
+    transform: scaleZ(1.1);
+}
+.navbar-list-items .begin-button:hover a
+{
+    color: #E52F37;
+}
+.navbar-button
+{
+    cursor: pointer;
+    font-size: 24px;
+    color: #E52F37;
+    border: 1px solid #E52F37;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    padding: 5px 15px;
+    display: none;
+}
+.navbar-responsive
+{
+    padding-left: 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height ease .5s;
+}
+.navbar-responsive.active
+{
+    max-height: 500px;
+}
+.navbar-responsive li
+{
+    line-height: 28px;
+    margin-left: 10px;
+}
+.navbar-responsive .begin-button{
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #E52F37;border: 1px solid #E52F37;
+    border-radius: 28px;
+    transition: all ease .5s;
+}
+.navbar-responsive .begin-button a
+{
+    color: white;
+}
+/* responsive */
+/* mobile  < 740px */
+@media screen and (max-width: 739px){
+    .navbar-button 
+    {
+        display: block;
+    }
+    .navbar-choices
+    {
+        display: none;
+    }
+    header
+    {
+        padding-inline: 20px;
+    }
+}
+/* tablet width >= 740px and width < 1024px */
+@media screen and (max-width: 1023px) and (min-width: 740px) {
+    .navbar-button 
+    {
+        display: block;
+    }
+    .navbar-choices
+    {
+        display: none;
+    }
+    header
+    {
+        padding-inline: 40px;
+    }
+}
+/* pc width >= 1024px */
