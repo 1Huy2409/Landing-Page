@@ -74,3 +74,25 @@ if (workSection)
         )
     }
 }
+const commentSection = document.querySelector(".comment-section"); 
+const commentItems = commentSection.querySelectorAll(".comment-item");
+
+if (commentItems)
+{
+    commentItems.forEach(item =>
+    {
+        if (item)
+        {
+            // console.log(item);
+            item.addEventListener("click", ()=>
+            {
+                const content = item.querySelector(".comment-content");
+                if (content)
+                {
+                    content.classList.toggle("active");
+                }
+            })
+        }
+    }
+    )
+}
