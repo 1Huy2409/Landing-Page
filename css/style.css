@@ -263,7 +263,6 @@ header .container
     background-color: #F9F9F9;
     display: flex;
     align-items: center;
-    gap: 10px;
     font-size: 16px;
     /* outline: 1px solid #000; */
 }
@@ -276,6 +275,36 @@ header .container
     font-size: 16px;
     outline: none;
     color: #555;
+}
+.home-section input.name-input 
+{
+    background: url(../img/input-user.png) no-repeat 12px 15px ;
+}
+.home-section input.name-email 
+{
+    background: url(../img/input-envelope.png) no-repeat 12px 15px ;
+}
+.home-section select 
+{
+    background: url(../img/input-select.png) no-repeat 12px 15px ;
+}
+.home-section input.register-input:focus, .home-section select.register-input:focus {
+    border-color: #656565 !important;
+    color: #454545 !important;
+    outline: none;
+}
+.home-section input.register-input, select.register-input {
+    width: 100% !important;
+    height: 52px !important;
+    padding-left: 11% !important;
+    padding-right: 5% !important;
+    margin-bottom: 15px !important;
+    color: #555 !important;
+    border: 1px solid #f1f1f1 !important;
+    background-color: #f9f9f9 !important;
+    font-size: 16px !important;
+    border-radius: 5px 5px 5px 5px !important;
+    box-sizing: border-box;
 }
 .home-section .register-box .button-register
 {
@@ -2048,3 +2077,49 @@ footer
     }
 }
 /* pc width >= 1024px */
+@keyframes bounceIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.3);
+    }
+    50% {
+        opacity: 1;
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+.bounceIn {
+    animation: bounceIn 1s ease-in-out;
+}
+@keyframes slideInLeft {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    100% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+.slideInLeft {
+    animation: slideInLeft 1s ease-in-out;
+}
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+.fadeIn {
+    animation: fadeIn 1s ease-in-out;
+}
