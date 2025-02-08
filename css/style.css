@@ -2,6 +2,7 @@ body
 {
     font-family: "Nunito", sans-serif;
     position: relative;
+    scroll-behavior: smooth;
 }
 a {
     text-decoration: none;
@@ -208,6 +209,14 @@ header .container
     align-items: center;
     justify-content: center;
     font-size: 28px;
+    border: 2px solid #fff;
+    transition: all ease .5s;
+    cursor: pointer;
+}
+.home-section .home-info .watch .button-watch:hover
+{
+    background-color: transparent;
+    color: white;
 }
 .home-section .home-info .watch .button-watch a{
     color: #E52F37;
